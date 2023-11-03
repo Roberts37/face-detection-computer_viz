@@ -39,13 +39,38 @@ The project consists of the following key components:
 
 ## Getting Started
 
-To get started with this project, follow these steps:
-
 1. Clone the repository to your local machine.
 
-2. Set up a Python environment with the required dependencies, including TensorFlow and OpenCV.
+2. Create the necessary directory structure to organize your data. You should have the following folders in your project directory:
 
-3. Prepare your dataset, making sure to organize images and labels properly.
+    ```
+    - data
+      - images
+      - labels
+      - test
+        - images
+        - labels
+      - train
+        - images
+        - labels
+      - val
+        - images
+        - labels
+    - aug_data
+      - test
+        - images
+        - labels
+      - train
+        - images
+        - labels
+      - val
+        - images
+        - labels
+    ```
+
+   You will place your images and labels for training, testing, and validation in their respective folders. Additionally, the `aug_data` directory is where augmented data will be stored during training.
+
+3. Set up a Python environment with the required dependencies, including TensorFlow and OpenCV.
 
 4. Customize the model architecture and loss functions to suit your specific application.
 
@@ -54,6 +79,9 @@ To get started with this project, follow these steps:
 6. Evaluate the model's performance and make any necessary adjustments.
 
 7. Prepare the model for real-time applications or deployment.
+
+Remember to populate the `images` and `labels` folders with the relevant data as required by your project. This directory structure is essential for the project to work properly.
+
 
 ## Dependencies
 
@@ -73,5 +101,4 @@ This project is inspired by the need for accurate object detection and tracking 
 
 ---
 
-**Project created by [Your Name]**
 
